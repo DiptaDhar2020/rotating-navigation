@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <title>Rotating Navigation</title>
+</head>
+<body>
+    <div class="container">
+        <div class="circle-container">
+            <div class="circle">
+                <button id="close">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </button>
+                <button id="open">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+        <div class="content">
+            <h1>Amazing Article</h1>
+            <small>James Florence</small>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A laborum itaque veniam totam. Id molestias recusandae error quibusdam facere, blanditiis accusamus numquam explicabo modi aperiam incidunt facilis quaerat esse nisi, corporis et atque quisquam laborum. A recusandae molestias ipsum expedita porro maiores, quae quibusdam harum ex sequi, cum adipisci ad vitae laboriosam dolor odit minus debitis tenetur enim est quaerat. Ipsum, possimus atque! Obcaecati atque id ut temporibus odit? Facere, quam a autem cum sint alias perspiciatis accusantium modi. Quos tempore, assumenda, reprehenderit, vero molestias ab cum laudantium magni reiciendis minima ut neque recusandae! Autem necessitatibus quae beatae unde saepe?</p>
+            <h3>My Dog</h3>
+            <img src="https://cdn.pixabay.com/photo/2019/08/07/14/11/dog-4390885_960_720.jpg" alt="">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti assumenda odit voluptatem esse accusantium iusto consequatur ullam iste quam mollitia cumque unde ipsam id quis expedita facere vitae ab aliquam non eos, sit corrupti aperiam sapiente! Totam eius facere impedit quas obcaecati dolor sunt minima qui magni consequatur. Aliquam corporis minus saepe ullam architecto doloribus explicabo voluptas ad repellat ipsam alias, assumenda eius quam repellendus sint voluptatibus quidem, nisi incidunt iste. Numquam aut ipsum voluptatibus.</p>
+        </div>
+    </div>
+    <nav>
+        <ul>
+            <li><i class="fa fa-home" aria-hidden="true"></i>Home</li>
+            <li><i class="fa fa-user" aria-hidden="true"></i>About</li>
+            <li><i class="fa fa-envelope" aria-hidden="true"></i>Contact</li>
+        </ul>
+    </nav>
+    <!-- JavaScript -->
+    <script>
+        const open = document.getElementById("open");
+        const close = document.getElementById("close");
+        const container = document.querySelector(".container");
+
+        open.addEventListener("click", () => container.classList.add("show-nav"));
+        close.addEventListener("click", () => container.classList.remove("show-nav"));
+
+    </script>
+</body>
+</html>
